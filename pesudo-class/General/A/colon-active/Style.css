@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-1{
+    background-color: rgb(208, 255, 0);
+    border-radius: 10%;
+    width: 70px;
+    height: 30px;
+    color: rgb(7, 7, 7);
+}
+#btn-1:active {
+    background-color: rgb(255, 68, 0);
+}

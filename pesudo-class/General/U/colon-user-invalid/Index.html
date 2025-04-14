@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:user-invalid</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            اگر عددی خارج از محدوده یک و ده وارد شود نادرست خواهد بود.
+        </p>
+        <input type="number" min="1" max="10" value="8">
+        <p>
+            ایمیل (اختیاری): چون ایمیل اختیاری است زمانی که خالی است معتبر می باشد.
+        </p>
+        <input type="email">
+        <p>
+            ایمیل (اجباری): چون ایمیل اجباری است زمانی که خالی است نامعتبر می باشد
+        </p>
+        <input type="email" required>
+        <p>
+            URL:
+        </p>
+        <input type="url">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slotted-prantheses</title>
+</head>
+<body>
+    <template id="card-template">
+        <div>
+          <h2><slot name="caption">title goes here</slot></h2>
+          <slot name="content">content goes here</slot>
+        </div>
+      </template>
+      
+      <my-card>
+        <span slot="caption">Error</span>
+        <p class="content" slot="content">Build failed!</p>
+      </my-card>
+<script>
+    customElements.define(
+  "my-card",
+  class extends HTMLElement {
+    constructor() {
+      super();
+
+      const template = document.getElementById("card-template");
+      const shadow = this.attachShadow({ mode: "open" });
+      shadow.appendChild(template.content.cloneNode(true));
+
+      const elementStyle = document.createElement("style");
+      elementStyle.textContent = `
+        div {
+          width: 200px;
+          border: 2px dotted red;
+          border-radius: 4px;
+        }`;
+      shadow.appendChild(elementStyle);
+
+      const cssTab = document.querySelector("#css-output");
+      const editorStyle = document.createElement("style");
+      editorStyle.textContent = cssTab.textContent;
+      shadow.appendChild(editorStyle);
+      cssTab.addEventListener("change", () => {
+        editorStyle.textContent = cssTab.textContent;
+      });
+    }
+  },
+);
+
+</script>      
+</body>
+</html>

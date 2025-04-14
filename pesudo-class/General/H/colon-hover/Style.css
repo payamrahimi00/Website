@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+div:empty {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(218, 25, 25);
+}
+div:nth-child(odd):hover {
+    cursor: pointer;
+    outline: 5px solid gold;
+}
+div:nth-child(even):hover {
+    cursor:copy;
+    outline: 5px solid rgb(0, 241, 24);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:root Example</title>
+    <style>
+        /* Define global CSS variables in :root */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size: 16px;
+            --spacing-unit: 8px;
+        }
+
+        /* Use the variables in your styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: var(--font-size);
+            color: var(--primary-color);
+            margin: 0;
+            padding: var(--spacing-unit);
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of using the `:root` pseudo-class to define global CSS variables.</p>
+    <button>Click Me</button>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:right</title>
+    <style>
+        /* Default page styles */
+        @page {
+            margin: 1cm;
+        }
+
+        /* Styles for right-hand pages */
+        @page :right {
+            margin-left: 200px;
+
+            /* Extra margin on the left for binding */
+            @top-right {
+                content: "Page " counter(page);
+                /* Add page number on the top right */
+            }
+        }
+
+        /* Styles for left-hand pages */
+        @page :left {
+            margin-right: 2cm;
+
+            /* Extra margin on the right for binding */
+            @top-left {
+                content: "Page " counter(page);
+                /* Add page number on the top left */
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <!-- pseudo-class for print (printtttttt) -->
+
+</head>
+
+<body>
+    <h1>Sample Document</h1>
+    <p>This is a sample document to demonstrate the use of the `:right` pseudo-class in printed media.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    <!-- Add more content to see multiple pages when printed -->
+</body>
+</html>

@@ -1,0 +1,16 @@
+button {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 2rem;
+}
+
+:modal {
+    background-color: rgb(239, 46, 7);
+    border: 2px solid rgb(255, 151, 15);
+    border-radius: 5px;
+}
+
+p {
+    color: black;
+}

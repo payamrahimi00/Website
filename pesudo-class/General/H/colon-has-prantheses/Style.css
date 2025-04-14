@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body
+{  
+     display: flex;
+    justify-content: center;
+}
+div.result{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: #ffc70e;
+}
+div.n {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+.n:has(p){
+    background-color: rgb(130, 33, 221);
+}
+.n:has(pre) {
+    background-color: rgb(246, 7, 187);
+}
+.n:has(article) {
+    background-color: rgb(25, 5, 245);
+}
+.n:has(a) {
+    background-color: rgb(243, 14, 14);
+}
+.n:has(a) :link {
+    color: rgb(7, 255, 255);
+}
+.n:empty {
+    background-color: rgb(238, 238, 238);
+}

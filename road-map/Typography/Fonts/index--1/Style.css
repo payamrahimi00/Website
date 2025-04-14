@@ -1,0 +1,33 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+p {
+  font-family: "Playwrite MX Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:rgba(254, 0, 0, 0.547);
+}
+
+@media screen and (max-width: 162px) and (max-height:197px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+    p::-webkit-scrollbar {
+      border: rgb(180, 180, 180);
+      background-color: #ff6536;
+    }
+    
+}

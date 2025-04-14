@@ -1,0 +1,45 @@
+.head{
+    font-size: 65px;
+    width: 200px;
+    height: 100px;
+    overflow-y: scroll;
+}
+.head:nth-child(1n){
+    color: red;
+}
+.head:nth-child(2n){
+    color: blue;
+}
+.head:nth-child(3n){
+    color: green;
+}
+.head:nth-child(4n){
+    color: yellow;
+}
+p{
+    font-size: 90px;
+    width: fit-content;
+    height: fit-content;
+}
+#item-1{
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
+
+}
+#item-2{
+    position: sticky;
+    top: 0;
+    background-color: lightgreen;
+}
+
+#item-3{
+    position: sticky;
+    top: 0;
+    background-color: lightpink;
+}
+#item-4{
+    position: sticky;
+    top: 0;
+    background-color: lightyellow;
+}

@@ -1,0 +1,6 @@
+h1:only-child {
+    color: fuchsia;
+}
+p:only-child {
+    color: yellow;
+}

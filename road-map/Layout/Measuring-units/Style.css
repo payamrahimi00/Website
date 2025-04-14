@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /* best-size--for-root-element */
+}
+p{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.6rem;
+    /* padding: 1rem; */
+}
+p:nth-child(odd){
+    font-size: 1.6rem;
+    background-color: red;
+}
+p:nth-child(even){
+    font-size: 1.6rem;
+    background-color: rgb(191, 255, 0);
+}

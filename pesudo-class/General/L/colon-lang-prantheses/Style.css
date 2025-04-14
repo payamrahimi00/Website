@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+:lang(en) {
+    outline: 2px solid deeppink;
+    color: purple;
+}
+:lang(fr) {
+    outline: 2px solid rgb(195, 190, 193);
+    color: rgb(74, 255, 29);
+}
+:lang(de) {
+    outline: 2px solid rgb(9, 230, 27);
+    color: rgb(0, 94, 255);
+}

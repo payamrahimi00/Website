@@ -1,0 +1,6 @@
+#txt::placeholder {
+    color: red;
+}
+#txt:focus-visible::placeholder {
+    color: rgb(60, 255, 6);
+}

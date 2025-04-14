@@ -1,0 +1,43 @@
+body {
+    color: #555;
+    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    direction: rtl;
+}
+
+p {
+    margin: 1em 0 .3em;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+input {
+    display: block;
+    width: 50%;
+    height: 2em;
+    background-color: lightgreen;
+}
+
+input[type="number"] {
+    width: auto;
+}
+
+input:invalid {
+    background-color: tomato;
+}
+
+/*input[type="number"]:out-of-range {
+background-color: yellow;
+}
+input[type="number"]:invalid {
+background-color: orange;
+}*/
+
+input:invalid:focus {
+    outline: 0;
+    border: none;
+    box-shadow: 0 0 3px 6px rgba(255, 0, 0, 0.3);
+}

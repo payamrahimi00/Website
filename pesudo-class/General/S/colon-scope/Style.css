@@ -1,0 +1,14 @@
+@scope (.container) {
+    :scope {
+        background-color: salmon;
+        padding: 10px;
+    }
+
+    a {
+        color: maroon;
+    }
+
+    a:hover {
+        color: blue;
+    }
+}

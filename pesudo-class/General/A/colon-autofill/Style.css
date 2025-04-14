@@ -1,0 +1,53 @@
+   /* Default styles for input fields */
+   input {
+       display: block;
+       width: 100%;
+       padding: 10px;
+       margin-bottom: 15px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       font-size: 16px;
+   }
+
+   /* Styles for autofilled inputs */
+   input:-webkit-autofill,
+   input:autofill {
+       background-color: #ffffcc;
+       /* Light yellow background */
+       border: 2px solid #ffcc00;
+       /* Orange border */
+       color: #000;
+       /* Black text */
+   }
+
+   /* Optional: Add styles for hover and focus states */
+   input:-webkit-autofill:hover,
+   input:autofill:hover,
+   input:-webkit-autofill:focus,
+   input:autofill:focus {
+       background-color: #ffff99;
+       /* Slightly darker yellow */
+       border-color: #ff9900;
+       /* Darker orange */
+   }
+
+   /* Container for the form */
+   .form-container {
+       max-width: 400px;
+       margin: 50px auto;
+       padding: 20px;
+       border: 1px solid #ddd;
+       border-radius: 10px;
+       background-color: #f9f9f9;
+   }
+
+   h1 {
+       text-align: center;
+       color: #333;
+   }
+
+   label {
+       font-weight: bold;
+       margin-bottom: 5px;
+       display: block;
+   }

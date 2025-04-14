@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::part() Example</title>
+    <style>
+        custom-element::part(content) {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <custom-element></custom-element>
+
+    <script>
+        class CustomElement extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                const wrapper = document.createElement('div');
+                wrapper.setAttribute('part', 'content');
+                wrapper.textContent = 'This is styled using ::part()';
+                shadow.appendChild(wrapper);
+            }
+        }
+
+        customElements.define('custom-element', CustomElement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+:host(h1) {
+    color: red;
+}
+
+:host(#shadow-dom-host) {
+    border: 2px dashed blue;
+}

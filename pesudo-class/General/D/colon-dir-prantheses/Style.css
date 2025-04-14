@@ -1,0 +1,13 @@
+/* #Sweet {
+    direction: rtl;
+}
+.suor{
+    direction: ltr;
+} */
+:dir(ltr) {
+    color: yellow;
+}
+
+:dir(rtl) {
+    color: powderblue;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data-lis</title>
+</head>
+<body>
+<form>
+    <label for="myBrowser">Choose a browser from this list:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" placeholder="Chrome" autocomplete="off"/>
+    <datalist id="browsers">
+    <option data-value="1">Chrome</option>
+    <option data-value="2">Edge</option>
+    <option data-value="3">Safari</option>
+    <option data-value="4">Firefox</option>
+    <option data-value="5">Opera</option>
+    </datalist>
+</form>
+</body>
+</html>

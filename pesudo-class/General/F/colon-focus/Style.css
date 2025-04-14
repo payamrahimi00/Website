@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.yellow:focus{
+    outline: none;
+    /* If you want teach this  change outline to see resault */
+    border: 2px dashed black;
+    color: #d0ca0cd5;
+    background-color: bisque;
+}

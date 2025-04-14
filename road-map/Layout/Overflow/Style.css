@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.container {
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+}
+.container-1 {
+    overflow: visible;
+}
+.container-2 {
+    overflow: hidden;
+}
+.container-3 {
+    overflow: scroll;
+}
+.container-4 {
+    overflow: auto;
+}
+.container-5 {
+    overflow: initial;
+}
+.container-6 {
+    overflow: inherit;
+}
+.container-7 {
+    overflow: unset;
+}

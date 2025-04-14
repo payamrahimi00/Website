@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border-collapse: collapse;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+.Transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e1eb71;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 2rem 2rem;
+}
+.Transform div {
+   width: 10rem;
+   height: 10rem;
+   background-color:#e5a3a3;
+   box-shadow: 0 0 0 0.1rem #c3b5ff,
+   0 0 0 0.2rem #c6c1ff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s ease-in-out;
+}
+.Transform div:is(.sclae):hover {
+    transform: scale(1.2);
+}
+
+.Transform div:is(.rotate):hover {
+    transform: rotate(100deg);
+}
+
+.Transform div:is(.translate):hover {
+    transform: translate(15rem,-20rem);
+}
+.Transform div:is(.skew):hover {
+    transform: skew(-12deg, -11deg);
+}
+.Transform div:is(.perspective):hover {
+    transform: perspective(10rem) rotateY(30deg);
+}
+.Transform div:is(.matrix):hover {
+    transform: matrix(1, 0.3, 0.3, 1, 20, -20);
+    /* matrix(scaleX, skewY, skewX, scaleY, translateX, translateY). */
+}
+.Transform div:is(.transform-origin):hover {
+    transform: rotate(45deg);
+    transform-origin: 50% bottom ;
+    /* 
+    /* The `transform-origin` property sets the pivot point for transformations.
+     *
+     * Syntax: transform-origin: x-axis y-axis z-axis;
+     * - x-axis: Horizontal position (e.g., `50%`, `left`).
+     * - y-axis: Vertical position (e.g., `top`, `25%`).
+     * - z-axis (optional): Depth position in 3D (e.g., `10px`).
+     *
+     * Example: transform-origin: 50% top;
+     * Default: 50% 50% (center of the element).
+     */
+     /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin */
+}
+.Transform div:is(.transform-style):hover {
+    transform: rotateX(166deg);
+    transform-style:flat;
+    
+}
+.Transform div:is(.backface-visibility):hover {
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}

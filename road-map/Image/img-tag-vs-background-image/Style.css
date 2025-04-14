@@ -1,0 +1,43 @@
+*,
+::after
+,::before {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+   :root {
+    --default-position:center;
+    --bgsize-object-fit:cover;
+
+   }
+/* img {
+    width: 400px; 
+    height: 300px;
+    background-color: gold;
+    object-fit:cover;
+} */
+ body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ .container {
+    text-align: center;
+    font-size:xx-large ;
+    width: 1200px;
+    height: 800px;
+    background-position:var(--default-position);
+    background-image: url(../../../assets/images/Random-img/img-fifth.jpg);
+    background-size:var(--bgsize-object-fit);
+    /* bg-size in bg image == object-fit in img */
+    background-repeat: no-repeat;
+    box-shadow: 20px 20px  20px rgb(123, 57, 57),
+     -3px -0px  20px rgb(123, 57, 57);
+    /* box-shadow x y blurry color */
+    background-attachment: fixed;
+    
+ }
+ 

@@ -1,0 +1,8 @@
+div ::target-text {
+    color: rgb(166, 254, 2);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: lightblue;    
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:defined</title>
+</head>
+<body>
+<custom-element>
+    <p>
+            Loaded content: Lorem ipsum tel sed tellus eiusmod tellus. Aenean. Semper
+            dolor sit nisi. Elit porttitor nisi sit vivamus.
+    </p>
+</custom-element>
+    
+    <button id="btn">define the <code>&lt;custom-element&gt;</code></button>
+
+</body>
+<script>
+    const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            customElements.define("custom-element", class extends HTMLElement { });
+            btn.remove();
+        });
+
+</script>
+</html>

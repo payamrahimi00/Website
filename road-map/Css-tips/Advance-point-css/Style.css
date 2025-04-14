@@ -1,0 +1,23 @@
+/* snaky_case */
+.snaky_case {
+    color: blue;
+    font-weight: bold;
+}
+
+/* kebab-case */
+.kebab-case {
+    color: green;
+    font-style: italic;
+}
+
+/* camelCase */
+.camelCase {
+    color: red;
+    text-decoration: underline;
+}
+
+/* PascalCAse */
+.PascalCAse {
+    color: purple;
+    text-transform: uppercase;
+}

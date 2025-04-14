@@ -1,0 +1,4 @@
+ div:empty{
+    outline: 3px dashed blueviolet;
+    height: 10px;
+ }

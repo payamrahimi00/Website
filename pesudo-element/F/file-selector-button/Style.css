@@ -1,0 +1,9 @@
+input::file-selector-button {
+background-color: rgba(31, 55, 208, 0.5);
+}
+input::file-selector-button:hover {
+    cursor: pointer;
+    transition:1s;
+    transform: rotate(360deg);
+    border-radius: 10px;
+}

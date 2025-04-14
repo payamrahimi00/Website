@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing is very important!!! */
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135rem;
+    height: 100rem;
+}
+.container {
+    width: 20rem;
+    height: 20rem;
+    background-color:aqua;
+    border: 1.2rem solid red;
+}

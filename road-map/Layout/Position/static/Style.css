@@ -1,0 +1,5 @@
+div.static {
+    width: fit-content;
+    position: static;
+    border: 3px solid #73AD21;
+  }

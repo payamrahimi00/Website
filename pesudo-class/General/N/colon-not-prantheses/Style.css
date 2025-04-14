@@ -1,0 +1,3 @@
+p:not(.random){
+    background-color: red;
+}

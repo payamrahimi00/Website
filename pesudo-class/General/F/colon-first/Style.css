@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+@page :first {
+    size: 8.5in 11in;
+    margin-left: 3in;
+    margin-top: 5in;
+}
+
+p {
+    page-break-after: always;
+    font: 1.5em sans-serif;
+}

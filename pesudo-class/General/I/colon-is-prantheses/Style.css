@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    justify-content: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin:30px 30px;
+    gap: 10px;
+}
+:is(.first-person,.second-person,.thrid-person) :is(#n5,#s5,h5) {
+    color: red;
+}

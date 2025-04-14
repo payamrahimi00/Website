@@ -1,0 +1,3 @@
+:where(p.intro, ul, ol) {
+    color: red;
+}

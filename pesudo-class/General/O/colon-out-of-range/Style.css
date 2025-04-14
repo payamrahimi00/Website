@@ -1,0 +1,6 @@
+#number:in-range {
+    background-color: green;
+}
+#number:out-of-range {
+    background-color: red;
+}

@@ -1,0 +1,10 @@
+a:link {
+    color: rgb(117, 222, 31);
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+/* if you want see resault use of the link and visited  */

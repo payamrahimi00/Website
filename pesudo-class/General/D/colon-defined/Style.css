@@ -1,0 +1,27 @@
+custom-element:not(:defined) {
+    border-color: grey;
+    color: grey;
+}
+
+custom-element:defined {
+    background-color: wheat;
+    border-color: black;
+    color: black;
+}
+
+/* show loading message */
+custom-element:not(:defined)::before {
+    content: "Loading...";
+    position: absolute;
+    inset: 0 0 0 0;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* remove the loading message */
+custom-element:defined::before {
+    content: "";
+}

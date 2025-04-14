@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+@font-face {
+    font-family:"bigparty4blue";
+    src: url("../../../../assets/fonts-files/bigparty4blue-font/misc/BigParty4Blue-2575.woff") format('woff');
+}
+@font-face {
+    font-family:"Hussar,SW";
+    font-weight: bold;
+    src: url("../../../../assets/fonts-files/hussar-bold-web-edition-font/misc/HussarBoldWeb-bf92.woff") format('woff');
+}
+@font-face {
+    font-family:"myfirstfont";
+    src: url("../../../../assets/fonts-files/branda-font/Branda-yolq.ttf") format('ttf');
+    font-weight:normal;
+}
+@font-face {
+    font-family: "C";
+    src: url("../../../../assets/fonts-files/resote-rose-font/misc/ResotE-Rose-89c1.woff") format('woff');
+}
+p {
+    font-family: "bigparty4blue";
+    font-size: 5rem;
+    font-weight: 400;
+}
+.p2{
+    font-family:"Hussar,SW";
+    font-size: 5rem;
+    font-weight: 400;
+}
+.p3{
+    font-family:"myfirstfont";
+    font-size: 5rem;
+    font-weight: 400;
+}
+.p4 {
+    font-family:"C";
+    font-size: 5rem;
+    font-weight: 400;
+}
